@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DailyShoppingList</string>
+    <string name="btRegister">Sign up</string>
+    <string name="teLoDaShList">Login Daily ShoppingList</string>
+    <string name="etUsername">Enter user name</string>
+    <string name="etpasswordd">Enter password</string>
+    <string name="btLogin">Login</string>
+    <string name="btRegister_now">Register Now</string>
+    <string name="teEmailaddress">Enter Emailaddress</string>
+    <string name="teUsername">Username</string>
+    <string name="tepassword">Password</string>
+    <string name="etRepeat_password">Repeat Password</string>
+    <string name="tvReDaShList">Registration Daily Shopping List</string>
+    <string name="etFullname">Enter Fullname</string>
+    <string name="btn_menu_1">Home</string>
+    <string name="btn_menu_2">Add</string>
+    <string name="btn_menu_3">Search</string>
+    <string name="btn_menu_4">Settings</string>
+    <string name="btn_menu_5">Settings</string>
+    <string name="btnRegisterCancel">Cancel</string>
+</resources>
