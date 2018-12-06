@@ -23,9 +23,9 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        toolbar= (Toolbar)findViewById(R.id.homeToolbar);
+        toolbar= findViewById(R.id.homeToolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Overview ShoppingList");
+        getSupportActionBar().setTitle("ShoppingList");
     }
 
 
@@ -73,13 +73,21 @@ public class HomeActivity extends AppCompatActivity {
                 //newGame();
                 Toast.makeText(this, "Search Shopping Item", Toast.LENGTH_SHORT).show();
                 return true;
+            case R.id.barcode:
+                //newGame();
+                Toast.makeText(this, "Barcode Scanner", Toast.LENGTH_SHORT).show();
+                return true;
             case R.id.settings:
                 //newGame();
                 Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
                 return true;
-            //case R.id.sign_out:
-            //Toast.makeText(this, "Sign Out", Toast.LENGTH_SHORT).show();
-            //return true;
+            case R.id.faq:
+                //newGame();
+                Toast.makeText(this, "FAQ", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.sign_out:
+                Toast.makeText(this, "Sign Out", Toast.LENGTH_SHORT).show();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
