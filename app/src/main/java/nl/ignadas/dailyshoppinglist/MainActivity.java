@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity {
 
     EditText etUsername;
@@ -39,11 +40,9 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Login succesfully", Toast.LENGTH_SHORT).show();
 
             // go to second activity
-            //Intent intent = new Intent(MainActivity.this, HomeActivity.class);
             Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-            intent.putExtra("Username", etUsername.getText().toString());
-            intent.putExtra("Password", etPassword.getText().toString());
-            //MainActivity.this.startActivity(intent);
+            intent.putExtra("Username : ", etUsername.getText().toString());
+            intent.putExtra("Password : ", etPassword.getText().toString());
             startActivity(intent);
         }
     }

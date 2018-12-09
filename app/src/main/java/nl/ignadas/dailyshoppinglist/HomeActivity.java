@@ -2,6 +2,7 @@ package nl.ignadas.dailyshoppinglist;
 
 import android.app.SearchManager;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -25,7 +26,11 @@ public class HomeActivity extends AppCompatActivity {
 
         toolbar= findViewById(R.id.homeToolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("ShoppingList");
+        getSupportActionBar().setTitle("Shopping List");
+
+
+        Intent intent = getIntent();
+        String string = intent.getStringExtra("message");
     }
 
 
